@@ -12,19 +12,19 @@ body{
     flex-wrap: wrap;
 }
 #imgandbtns{
-    background: rgba(152, 152, 152, 0.804);
+    background: rgba(152, 152, 152, 0);
     display:flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 30px;
 }
 #modal1, #modal2, #modal3{
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
 }
 
 #infResult{
@@ -44,7 +44,26 @@ body{
     justify-content: center;
     align-items: center;
 }
+#resFninal{
+    background: rgba(179, 167, 167, 0);
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* ------------------------------- */
+h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22pt;
+
+    color: #444444;
+background: #FFFFFF;
+text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+color: #444444;
+background: #FFFFFF;
+}
 table{
 
     background: rgba(165, 42, 42, 0);

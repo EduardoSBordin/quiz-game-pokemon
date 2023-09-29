@@ -1,8 +1,14 @@
 const getIMG = document.querySelector('img');
+const divresFninal = document.querySelector('#resFninal');
 
 const score1 = document.querySelector('#score1');
 const score2 = document.querySelector('#score2');
 const score3 = document.querySelector('#score3');
+
+const btnReload = document.createElement('button');
+btnReload.innerHTML = 'x';
+
+let getH5 = document.querySelector('h5');
 
 const modal1 = document.querySelector('#modal1');
 modal1.style.display = 'flex';
@@ -20,32 +26,34 @@ function fModal1(){
     const btnOp1_modal1 = document.querySelector('#op1-modal1');
     const btnOp2_modal1 = document.querySelector('#op2-modal1');
     const btnOp3_modal1 = document.querySelector('#op3-modal1');
-
     btnOp1_modal1.addEventListener('click', ()=> {
-
-        score++;
-        score1.style.background = 'rgb(149, 255, 128)';
+        
+        score1.style.background = 'rgb(149, 255, 128)'; // green
         modal1.style.display = 'none';
         modal2.style.display = 'flex';
         modal3.style.display = 'none';
-        
+        score++;
+        // getH5.innerHTML = score;
+        console.log(score);
     });
 
     btnOp2_modal1.addEventListener('click', () => {
 
-        score1.style.background ='rgb(255, 128, 128)';
+        score1.style.background ='rgb(255, 128, 128)'; // red
         modal1.style.display = 'none';
         modal2.style.display = 'flex';
         modal3.style.display = 'none';
+        // getH5.innerHTML = score;
     })
 
     btnOp3_modal1.addEventListener('click', () => {
 
 
-        score1.style.background ='rgb(255, 128, 128)';
+        score1.style.background ='rgb(255, 128, 128)'; // red
         modal1.style.display = 'none';
         modal2.style.display = 'flex';
         modal3.style.display = 'none';
+        // getH5.innerHTML = score;
     })
 
 }
@@ -61,7 +69,7 @@ function fModal2(){
         modal1.style.display = 'none';
         modal2.style.display = 'none';
         modal3.style.display = 'flex';
-        
+        // getH5.innerHTML = score;
     });
 
     btnOp2_modal2.addEventListener('click', () => {
@@ -70,6 +78,9 @@ function fModal2(){
         modal1.style.display = 'none';
         modal2.style.display = 'none';
         modal3.style.display = 'flex';
+        score++;
+        // getH5.innerHTML = score;
+        console.log(score);
     })
 
     btnOp3_modal2.addEventListener('click', () => {
@@ -79,6 +90,7 @@ function fModal2(){
         modal1.style.display = 'none';
         modal2.style.display = 'none';
         modal3.style.display = 'flex';
+        // getH5.innerHTML = score;
     })
 
 }
@@ -94,7 +106,7 @@ function fModal3(){
         modal1.style.display = 'flex';
         modal2.style.display = 'none';
         modal3.style.display = 'none';
-        
+        getH5.innerHTML = `Você teve: ${score} acertos`;
     });
 
     btnOp2_modal3.addEventListener('click', () => {
@@ -103,6 +115,7 @@ function fModal3(){
         modal1.style.display = 'flex';
         modal2.style.display = 'none';
         modal3.style.display = 'none';
+        getH5.innerHTML = `Você teve: ${score} acertos.`;
     })
 
     btnOp3_modal3.addEventListener('click', () => {
@@ -112,6 +125,9 @@ function fModal3(){
         modal1.style.display = 'flex';
         modal2.style.display = 'none';
         modal3.style.display = 'none';
+        score++;
+        getH5.innerHTML = `Você teve: ${score} acertos`;
+        console.log(score);
     })
 
 }
@@ -119,4 +135,3 @@ function fModal3(){
 fModal1();
 fModal2();
 fModal3();
-console.log(score);
