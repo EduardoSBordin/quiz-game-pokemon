@@ -1,0 +1,82 @@
+/* Divs */
+body{
+
+    background: rgb(255, 255, 255);
+}
+#main{
+
+    background: rgba(128, 128, 128, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#imgandbtns{
+    background: rgba(0, 128, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#infResult{
+    background: rgba(0, 0, 255, 0);
+    margin-top: 20px;
+}
+#divquizText{
+
+    background: rgba(255, 0, 0, 0);
+}
+#btns{
+
+    background: rgba(165, 42, 42, 0);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------------- */
+table{
+
+    background: rgba(165, 42, 42, 0);
+}
+td{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    background: rgb(255, 128, 128);
+}
+img{
+    width: 350px;
+    height: 350px;
+    background: rgb(255, 250, 163);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: #444444;
+    background: #FFFFFF;
+}
+button{
+
+    background: white;
+    border: none;
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
