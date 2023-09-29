@@ -7,6 +7,17 @@ const score3 = document.querySelector('#score3');
 
 const btnReload = document.createElement('button');
 btnReload.innerHTML = 'x';
+btnReload.id = 'btnReload';
+
+btnReload.addEventListener('click', () => {
+
+    score = 0;
+    score1.style.background = 'none';
+    score2.style.background = 'none';
+    score3.style.background = 'none';
+    btnReload.remove();
+    getH5.innerHTML = '';
+})
 
 let getH5 = document.querySelector('h5');
 
@@ -106,7 +117,9 @@ function fModal3(){
         modal1.style.display = 'flex';
         modal2.style.display = 'none';
         modal3.style.display = 'none';
+
         getH5.innerHTML = `Você teve: ${score} acertos`;
+        divresFninal.appendChild(btnReload);
     });
 
     btnOp2_modal3.addEventListener('click', () => {
@@ -115,7 +128,9 @@ function fModal3(){
         modal1.style.display = 'flex';
         modal2.style.display = 'none';
         modal3.style.display = 'none';
+
         getH5.innerHTML = `Você teve: ${score} acertos.`;
+        divresFninal.appendChild(btnReload);
     })
 
     btnOp3_modal3.addEventListener('click', () => {
@@ -125,8 +140,10 @@ function fModal3(){
         modal1.style.display = 'flex';
         modal2.style.display = 'none';
         modal3.style.display = 'none';
+
         score++;
         getH5.innerHTML = `Você teve: ${score} acertos`;
+        divresFninal.appendChild(btnReload);
         console.log(score);
     })
 
