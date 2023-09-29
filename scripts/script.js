@@ -6,7 +6,7 @@ const score2 = document.querySelector('#score2');
 const score3 = document.querySelector('#score3');
 
 const btnReload = document.createElement('button');
-btnReload.innerHTML = 'x';
+btnReload.innerHTML = 'Zerar';
 btnReload.id = 'btnReload';
 
 btnReload.addEventListener('click', () => {
