@@ -1,5 +1,6 @@
 const getIMG = document.querySelector('img');
 const divresFninal = document.querySelector('#resFninal');
+const divbtns = document.querySelector('.divBtns');
 
 const score1 = document.querySelector('#score1');
 const score2 = document.querySelector('#score2');
@@ -17,6 +18,7 @@ btnReload.addEventListener('click', () => {
     score3.style.background = 'none';
     btnReload.remove();
     getH5.innerHTML = '';
+    modal1.style.display = 'flex';
 })
 
 let getH5 = document.querySelector('h5');
@@ -120,6 +122,8 @@ function fModal3(){
 
         getH5.innerHTML = `Você teve: ${score} acertos`;
         divresFninal.appendChild(btnReload);
+
+        modal1.style.display = 'none';
     });
 
     btnOp2_modal3.addEventListener('click', () => {
@@ -131,6 +135,8 @@ function fModal3(){
 
         getH5.innerHTML = `Você teve: ${score} acertos.`;
         divresFninal.appendChild(btnReload);
+        
+        modal1.style.display = 'none';
     })
 
     btnOp3_modal3.addEventListener('click', () => {
@@ -145,6 +151,8 @@ function fModal3(){
         getH5.innerHTML = `Você teve: ${score} acertos`;
         divresFninal.appendChild(btnReload);
         console.log(score);
+
+        modal1.style.display = 'none';
     })
 
 }
